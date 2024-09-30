@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <style>
+            *{
+                margin: 0;
+                
+                
+            }
+            #root{
+             border: 1px solid black;
+             border-radius: 10px;
+              
+            
+              
+            }
+            #header{
+                text-align: center;
+                background-color: black;
+                color: white;
+                height: 50px;
+                padding: 20px;
+            }
+            #main{
+                text-align: center;
+                margin-top: 100px;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            #footer{
+                background-color: black;
+                height: 50px;
+                display: flex;
+                justify-content: space-evenly;
+                padding:10px;
+                color: white;
+                margin-top: 380px;
+               
+            }
+            #main P{
+                margin-top: 100px;
+                text-align: justify;
+
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            function Header(){
+        return <div id="header"> <h1 > Prasad's</h1></div>     
+            }
+            function Main(){
+                return <div id="main">
+                    <h1>Welcome!!</h1>
+                      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, rerum! Nobis nemo pariatur sequi harum cum consequuntur aperiam! Impedit at dolores repudiandae sapiente quam veniam minus blanditiis voluptatibus explicabo excepturi libero sequi, doloribus modi adipisci expedita. Dolorum eveniet quisquam eos eligendi necessitatibus reiciendis autem sunt dolorem corrupti? Amet asperiores, recusandae eaque quis hic iusto quaerat ea modi facilis ipsam! Tempora inventore aliquid, officia vitae rem eligendi itaque, sint sequi alias labore saepe. Est voluptates, debitis amet dolore quidem ab aspernatur magni, impedit eius architecto voluptatibus, exercitationem at optio minima incidunt sunt accusantium cum? Quibusdam aspernatur ullam ad ducimus minima! Velit placeat accusamus mollitia, corrupti libero asperiores voluptates odit, esse autem, praesentium ut saepe repudiandae tempora fuga nesciunt dolorem sit ex consequuntur expedita dicta doloremque. Neque, repudiandae reiciendis suscipit voluptatem debitis cum sint provident omnis illo molestias odit facilis saepe ad, reprehenderit quod repellendus magnam ducimus maxime doloribus facere dolorem esse. Vero eos incidunt voluptates cupiditate excepturi culpa beatae. Nostrum iusto illo in aut esse blanditiis recusandae voluptas, debitis unde provident corrupti, facilis suscipit expedita hic fuga praesentium veritatis odit reiciendis dolor dolorem ut sapiente natus eligendi! Hic, maxime laudantium. Est harum ut corrupti deserunt non maxime debitis expedita error, cum animi suscipit molestias atque asperiores sapiente voluptates quos quisquam sint, vitae dicta, distinctio officiis sunt. Error, possimus. Repellendus, temporibus? Odit neque nesciunt architecto omnis possimus quia asperiores adipisci? Nobis sapiente dicta placeat neque voluptatibus tempore dolore voluptatum vel, id soluta consequuntur, quidem recusandae nisi fuga doloremque sed, consectetur ea a facilis beatae rem. Cupiditate, aut dignissimos perspiciatis veniam eius nobis enim molestiae consectetur beatae quam repellendus incidunt maxime. Fugiat molestiae exercitationem consequatur? Repellat voluptatem sed eum, aspernatur necessitatibus corrupti vero laborum. Officia corrupti obcaecati expedita accusamus laboriosam tempora nulla veritatis minus et. Provident atque ut, nostrum aliquid ipsa eaque porro illo eveniet dolore magni repudiandae quasi unde ipsum doloribus nemo ea fugit culpa! Delectus, nisi! Nobis sit voluptatum ut. Ex rem quod quae, fugit voluptatum ducimus expedita culpa dignissimos sapiente mollitia eligendi repudiandae voluptatibus nobis doloribus odio illum soluta nisi enim harum sint adipisci consequatur commodi, iste sequi. Illo cumque facilis consectetur voluptatum aut magni nam, possimus recusandae ut voluptatem corrupti suscipit, id eaque excepturi error fuga, aliquid hic nihil nesciunt quasi optio culpa. Facilis quis eos sint, obcaecati commodi explicabo asperiores incidunt cum labore itaque numquam, ea placeat esse consequuntur consectetur maxime debitis iste reprehenderit natus, aperiam delectus voluptatum!</p>                    </div>
+            }
+            function Footer(){
+                return <div id="footer">
+                    <p>Contact</p>    
+                    <p>Address</p>  
+                    <p>Phone</p>  
+                    <p>Email</p>    
+                    </div>
+            }
+            function App(){
+                return (<div id="home">
+                    <Header />
+                    <Main />
+                     <Footer />
+                    </div>)
+            }
+            ReactDOM.render(<App />,document.getElementById("root"))
+           
+        </script>
+    </body>
+</html>
